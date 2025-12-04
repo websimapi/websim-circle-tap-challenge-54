@@ -1,0 +1,8 @@
+function normalizeTimestamps(frames) {
+  if (!frames.length) return frames;
+  const t0 = frames[0].timestamp;
+  return frames.map(f => ({
+    ...f,
+    relTime: (f.timestamp - t0) / 1000 // seconds since start
+  }));
+}

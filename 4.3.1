@@ -1,0 +1,7 @@
+async function loadReplayData(replayUrl) {
+  const res = await fetch(replayUrl);
+  if (!res.ok) throw new Error(`Failed to load replay: ${res.status}`);
+  const data = await res.json();
+  return data; // { frames, config }
+}
+

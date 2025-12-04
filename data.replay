@@ -1,0 +1,30 @@
+{
+  "frames": [
+    {
+      "angle": -1.57,          // Cursor rotation in radians
+      "targetStartAngle": 2.1, // Target zone start in radians
+      "targetSize": 0.4,       // Target arc length in radians
+      "targetColor": "hsl(0, 100%, 60%)",
+      "score": 0,
+      "level": 1,
+      "timestamp": 12345.67,   // ms (relative to some performance.now() start)
+      "pulseAmount": 0.1,
+      "success": true          // Optional, true if tap occurred here
+    }
+    // ... thousands of frames
+  ],
+  "config": {
+    "difficulty": "easy",
+    "difficulties": {
+      "easy":   { "speed": 3.7699, "size": 0.4,  "trackWidthFactor": 0.12 },
+      "medium": { "speed": 4.7123, "size": 0.25, "trackWidthFactor": 0.07 },
+      "hard":   { "speed": 5.6549, "size": 0.15, "trackWidthFactor": 0.035 }
+    },
+    "colors": {
+      "secondary": "rgb(15, 52, 96)", // track color
+      "success":   "rgb(76, 175, 80)", // not strictly required for bare minimum
+      "fail":      "rgb(233, 69, 96)"  // line color
+    }
+    // currentUser etc. may be present but are optional for basic visuals
+  }
+}

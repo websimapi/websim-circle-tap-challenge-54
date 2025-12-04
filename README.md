@@ -51,3 +51,4 @@ When a user clicks "Submit Highscore", the game sends the following message to t
   score: [level_number, score_number], // e.g. [5, 42]
   replay: "https://websim-storage-url.../replay.json"
 }
+```
