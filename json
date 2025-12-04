@@ -1,0 +1,21 @@
+{
+  "frames": [
+    {
+      "angle": -1.57,          // Cursor rotation in radians
+      "targetStartAngle": 2.1, // Target zone start in radians
+      "targetSize": 0.4,       // Target arc length in radians
+      "targetColor": "hsl(0, 100%, 60%)",
+      "score": 0,
+      "level": 1,
+      "timestamp": 12345.67,   // ms
+      "pulseAmount": 0.1,
+      "success": true          // Optional, true if tap occurred here
+    },
+    // ... thousands of frames
+  ],
+  "config": {
+    "difficulty": "easy",
+    "colors": { ...theme_colors }
+  }
+}
+
